@@ -13,11 +13,12 @@ closeMenu.addEventListener('click',close);
 menu_items.forEach(item => {
     item.addEventListener('click', () => close())
 })
-
+///function to display navlists
 function show(){
     mainMenu.style.display = 'flex';
     mainMenu.style.top = '0';
 }
+///function to close navlists
 function close(){
     mainMenu.style.top = '-100%';
 }
