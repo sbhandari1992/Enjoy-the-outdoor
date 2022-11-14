@@ -30,7 +30,7 @@
     transition: 0.2s ease;
   }
   nav .mainMenu li a:hover {
-    background: rgb(0, 179, 255);
+    background: rgb(137, 168, 168);
 	border-radius: 50%;
 	transition: 0.9s ease;
 
@@ -89,7 +89,7 @@
     }
     nav .mainMenu li a:hover {
       background: none;
-      color: rgb(255, 123, 0);
+      color: #f20d0d;
     }
     .icons i {
       display: inline-block;
