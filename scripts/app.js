@@ -9,7 +9,7 @@ const menu_items = document.querySelectorAll('nav .mainMenu li a');
 openMenu.addEventListener('click',show);
 closeMenu.addEventListener('click',close);
 
-//  Close when you click on a menu item 
+//  Close when you click on a menu items
 menu_items.forEach(item => {
     item.addEventListener('click', () => close())
 })
