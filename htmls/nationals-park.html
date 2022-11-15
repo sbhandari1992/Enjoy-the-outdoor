@@ -9,23 +9,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 </head>
 <body>
-    <nav>
-        <div class="logo"><h1>OutDoor</h1></div>
-        <div class="openMenu"><i class="fa fa-bars"></i></div>
-        <ul class="mainMenu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Place to go</a></li>
-            <li><a href="#">Things to do</a></li>
-            <li><a href="#">Contact</a></li>
-            <div class="closeMenu"><i class="fa fa-times"></i></div>
-            <span class="icons">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-github"></i>
-            </span>
-        </ul>
-      </nav>
+    <main class="npMain">
+        <nav>
+            <div class="logo"><h1>OutDoor</h1></div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Place to go</a></li>
+                <li><a href="#">Things to do</a></li>
+                <li><a href="#">Contact</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-github"></i>
+                </span>
+            </ul>
+        </nav>
+        <section class="pSection-1">
+            <h1 style="margin-left: 25px; font-size: 100px">National Parks</h1>
+
+            <fieldset style="margin: 20px;">
+                <legend>
+                     Search Park 
+                </legend>
+                <select name="Type" id="parkType">
+                    <option value="pickUp">Search By Type</option>
+                </select>
+                <select name="Location" id="parkLocation">
+                    <option value="pickUp">Search By Location</option>
+                </select>
+
+
+            </fieldset>
+            <div>
+                
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>
