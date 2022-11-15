@@ -117,6 +117,9 @@
     margin: 6px;
     cursor: pointer;
   }
+  footer {
+    background-color: rgb(255, 180, 127);
+  }
   @media (max-width: 800px) {
     nav .mainMenu {
       height: 100vh;
