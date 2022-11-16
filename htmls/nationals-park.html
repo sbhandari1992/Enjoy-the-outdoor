@@ -34,15 +34,6 @@
                 <legend>
                      Search Park 
                 </legend>
-                <!-- <select name="Type" id="parkType">
-                    <option value="pickUp">Search By Type</option>
-                </select>
-                <select name="Location" id="parkLocation">
-                    <option value="pickUp">Search By Location</option>
-                </select> -->
-                <div>
-                    <button id="showAll">Show All</button>
-                </div>
                 <div>
                     <button id="parkType">Search By Type</button>
                     <select name="sParkType" id="sParkType">
@@ -55,20 +46,108 @@
                         <option value="">Choose Location</option>
                     </select>
                 </div>
+                <div>
+                    <button id="showAll">View All National Park</button>
+                </div>
                 
-                
-                
-
-
             </fieldset >
             <fieldset style="margin: 20px;">
                 <legend>Output</legend>
+                <div id="tContainer">
+                    <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th>LocationID</th>
+                            <th>LocationName</th>
+                            <th>Address</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>ZipCode</th>
+                            <th>Phone</th>
+                            <th>Fax</th>
+                            <th>Latitude</th>
+                            <th>Longitude</th>
+                            <th>Location</th>
+                          </tr>
+                        </thead>
+                        <!-- <tbody>
+                          <tr>
+                            <td id="tdLocationID">LocationID</td>
+                            <td id="tdLocationName">LocationName</td>
+                            <td id="tdAddress">Address</td>
+                            <td id="tdCity">City</td>
+                            <td id="tdZipCode">ZipCode</td>
+                            <td id="tdPhone">Phone</td>
+                            <td id="tdFax">Fax</td>
+                            <td id="tdLatitude">CitLatitudey</td>
+                            <td id="tdLongitude">Longitude</td>
+                            <td id="tdLocation">Location</td>
+                          </tr>
+                          <tr>
+                            <td id="tdLocationID">LocationID</td>
+                            <td id="tdLocationName">LocationName</td>
+                            <td id="tdAddress">Address</td>
+                            <td id="tdCity">City</td>
+                            <td id="tdZipCode">ZipCode</td>
+                            <td id="tdPhone">Phone</td>
+                            <td id="tdFax">Fax</td>
+                            <td id="tdLatitude">CitLatitudey</td>
+                            <td id="tdLongitude">Longitude</td>
+                            <td id="tdLocation">Location</td>
+                          </tr>
+                          <tr>
+                            <td id="tdLocationID">LocationID</td>
+                            <td id="tdLocationName">LocationName</td>
+                            <td id="tdAddress">Address</td>
+                            <td id="tdCity">City</td>
+                            <td id="tdZipCode">ZipCode</td>
+                            <td id="tdPhone">Phone</td>
+                            <td id="tdFax">Fax</td>
+                            <td id="tdLatitude">CitLatitudey</td>
+                            <td id="tdLongitude">Longitude</td>
+                            <td id="tdLocation">Location</td>
+                          </tr>
+                        </tbody> -->
+                    </table>
+                      
+                      
+                </div>
+
             </fieldset>
             <div>
                 
             </div>
         </section>
     </main>
+    <!-- <tbody>
+        <tr>
+          <td id="td1">LocationID td1</td>
+          <td id="td2">LocationName td2</td>
+          <td id="td3">Address td3</td>
+          <td id="td4">City td4</td>
+          <td id="td5">State td5</td>
+          <td id="td6">ZipCode td6</td>
+          <td id="td7">Phone td7</td>
+          
+        </tr>
+      </tbody> -->
+       <!-- <table id="npTable">
+                        <thead id="npThead">
+                          <tr id="trow">
+                            <th>LocationID</th>
+                            <th>LocationName</th>
+                            <th>Address</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>ZipCode</th>
+                            <th>Phone</th>
+                            <th>Fax</th>
+                            <th>Latitude</th>
+                            <th>Longitude</th>
+                            <th>Location</th>
+                          </tr>
+                        </thead>
+                      </table> -->
 
     <script src="../scripts/parksSearch.js " type="module"></script>
     <script>
@@ -79,7 +158,6 @@
 
         const parkLocationBtn = document.getElementById('parkLocation');
         const sParkLocationBtn = document.getElementById('sLocation');
-        console.log(sParkLocationBtn);
 
         sParkTypeBtn.style.display = "none";
         sParkLocationBtn.style.display = "none";
