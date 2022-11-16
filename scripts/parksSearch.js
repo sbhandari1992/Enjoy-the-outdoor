@@ -1,9 +1,15 @@
-import {nationalParksArray} from "./nationalParkData.js";
+import { nationalParksArray } from "./nationalParkData.js";
+import { locationsArray } from "./locationData.js";
+import { parkTypesArray } from "./parkTypeData.js";
 
+locationsArray.forEach(function (av) {
+    let optionElement = new Option(av);
+    sLocation.appendChild(optionElement);
+})
 
-// let parkType = document.getElementById("parkType");
-// console.log(parkType);
-// let parkLocation = document.getElementById("parkLocation");
-// console.log(parkLocation);
-// let showAllBtn = document.getElementById("showAll");
-// console.log(showAllBtn);
+parkTypesArray.forEach(function(av) {
+    let optionElement = new Option(av);
+    sParkTypeBtn.appendChild(optionElement);
+
+});
+
