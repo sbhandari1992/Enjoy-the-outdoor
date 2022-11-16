@@ -13,6 +13,16 @@
     height: 500px;
 
   } */
+  legend {
+    font-size: 50px;
+    margin: 20px;
+  }
+
+ .pSection1 {
+  border: 5px solid red;
+ }
+
+ 
   .container {
     max-width: 1400px;
     display: flex;
