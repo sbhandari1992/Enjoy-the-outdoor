@@ -22,6 +22,9 @@ function displayItems() {
 
     if (sMountainElValue == av.name) {
       let h4Name = document.createElement("h4");
+
+      
+      let h4Name = document.createElement("h4");
       outputDivEl.appendChild(h4Name);
       h4Name.innerText = `Mountain Name:   ${av.name}`;
 
