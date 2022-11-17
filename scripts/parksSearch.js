@@ -19,6 +19,7 @@ sParkTypeBtn.style.display = "none";
 sParkLocationBtn.style.display = "none";
 
 parkTypeBtn.onclick = function () {
+    sParkLocationBtn.style.display = "none";
   if (sParkTypeBtn.style.display !== "none") {
     sParkTypeBtn.style.display = "none";
   } else {
@@ -26,12 +27,15 @@ parkTypeBtn.onclick = function () {
   }
 };
 parkLocationBtn.onclick = function () {
+    sParkTypeBtn.style.display = "none";
   if (sParkLocationBtn.style.display !== "none") {
     sParkLocationBtn.style.display = "none";
   } else {
     sParkLocationBtn.style.display = "inline";
   }
 };
+
+
 
 ///to put option for  choose  by location dropdown
 locationsArray.forEach(function (av) {
@@ -48,6 +52,9 @@ parkTypesArray.forEach(function (av) {
 showAllBtn.onclick = getAllData;
 
 function getAllData() {
+    sParkTypeBtn.style.display = "none";
+    sParkLocationBtn.style.display = "none";
+
     tBodyEl.innerHTML = "";
 
   nationalParksArray.forEach((av) => {
