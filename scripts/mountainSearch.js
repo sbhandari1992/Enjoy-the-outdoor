@@ -2,6 +2,8 @@ import { mountainsArray } from "./mountainData.js";
 
 const sMountainEl = document.getElementById("sMountain");
 const outputDivEl = document.getElementById("outputDiv");
+const outputimgDivEl = document.getElementById("outputImgDiv");
+
 
 for (let i = 0; i < mountainsArray.length; i++) {
   const element = mountainsArray[i].name;
@@ -16,14 +18,21 @@ function displayItems() {
 
   let sMountainElValue = sMountainEl.value;
   outputDivEl.innerHTML = '';
+  outputimgDivEl.innerHTML = '';
+
 
   mountainsArray.forEach((av) => {
 
 
     if (sMountainElValue == av.name) {
-      let h4Name = document.createElement("h4");
-
       
+      let imgEl = document.createElement("img");
+      outputimgDivEl.appendChild(imgEl);
+      let imgSrc = av.img;
+      console.log(imgSrc);
+      imgEl.src = `../images/${imgSrc}`
+     
+
       let h4Name = document.createElement("h4");
       outputDivEl.appendChild(h4Name);
       h4Name.innerText = `Mountain Name:   ${av.name}`;

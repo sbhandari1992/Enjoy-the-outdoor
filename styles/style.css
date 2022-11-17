@@ -68,6 +68,15 @@
     
 
   }
+  #fieldset {
+    background-color: #eb3740;
+    display: flex;
+  }
+  #outputImgDiv{
+    display: flex;
+    column-gap: 40px;
+
+  }
 
   body {
     font-family: Arial, sans-serif;
