@@ -13,7 +13,7 @@ for (let i = 0; i < mountainsArray.length; i++) {
   sMountainEl.appendChild(theOption);
 }
 
-outputFieldset.onclick
+
 sMountainEl.onchange = displayItems;
 
 function displayItems() {
