@@ -12,6 +12,9 @@ const parkLocationBtn = document.getElementById("parkLocation");
 const sParkLocationBtn = document.getElementById("sLocation");
 const feildSet = document.getElementById("feildSet");
 const feildSetSearch = document.getElementById("feildSetSearch");
+const firstDivinFeildset = document.getElementById("firstDivinFeildset");
+
+
 
 
 const tBodyEl = document.getElementById("tBody");
@@ -22,9 +25,9 @@ sParkLocationBtn.style.display = "none";
 feildSet.style.display = "none";
 
 
-// feildSetSearch.onclick = function (){
-//     feildSet.style.display = "none";
-// }
+firstDivinFeildset.onclick = function (){
+    feildSet.style.display = "none";
+}
 //handel parksTypeBtn
 parkTypeBtn.onclick = function () {
   sParkLocationBtn.style.display = "none";
@@ -43,8 +46,6 @@ parkLocationBtn.onclick = function () {
     sParkLocationBtn.style.display = "inline";
   }
 };
-//handel showAllBtn
-showAllBtn.onclick
 
 ///to put option for  choose  by location dropdown
 locationsArray.forEach(function (av) {
@@ -58,7 +59,7 @@ parkTypesArray.forEach(function (av) {
   sParkTypeBtn.appendChild(optionElement);
 });
 
-/// to show all parks when 
+/// to show all parks  
 showAllBtn.onclick = getAllData;
 
 function getAllData() {
