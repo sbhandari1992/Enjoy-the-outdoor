@@ -65,11 +65,11 @@
 
   }
   .sectional-link:hover, #parkType:hover , #showAll:hover, #parkLocation:hover, #sLocation:hover, #sParkType:hover {
-    background: rgb(137, 168, 154);
+    background: rgb(129, 47, 47);
+    color: rgb(255, 255, 255);
 	  border-radius: 50%;
-    transition: 0.9s ease 0;
-    cursor: pointer;
-    color: rgb(49, 53, 32);  
+    transition: 0.5s ease;
+    cursor: pointer; 
   }
 
   body {
