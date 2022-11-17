@@ -10,6 +10,7 @@ const sParkTypeBtn = document.getElementById("sParkType");
 
 const parkLocationBtn = document.getElementById("parkLocation");
 const sParkLocationBtn = document.getElementById("sLocation");
+const feildSet = document.getElementById('feildSet');
 
 const tBodyEl = document.getElementById("tBody");
 
@@ -47,6 +48,8 @@ parkTypesArray.forEach(function (av) {
 showAllBtn.onclick = getAllData;
 
 function getAllData() {
+    tBodyEl.innerHTML = "";
+
   nationalParksArray.forEach((av) => {
     let tr = document.createElement("tr");
 
@@ -109,6 +112,8 @@ sParkLocationBtn.onchange = getParksByLocation;
 function getParksByLocation() {
   console.log("function works");
   console.log(sParkLocationBtn.value);
+  tBodyEl.innerHTML = "";
+
   // let selectedPark =  nationalParksArray.filter(av =>  sParkLocationBtn.value == av.State );
   nationalParksArray.forEach((av) => {
     // console.log(av.State);
@@ -176,6 +181,8 @@ sParkTypeBtn.onchange = getParksByType;
 function getParksByType() {
   console.log("function works");
   console.log(sParkTypeBtn.value);
+  tBodyEl.innerHTML = "";
+
   // let selectedPark =  nationalParksArray.filter(av =>  sParkLocationBtn.value == av.State );
   nationalParksArray.forEach((av) => {
     if (av.LocationName.includes(sParkTypeBtn.value)) {
