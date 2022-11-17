@@ -1,194 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>National Parks Search</title>
     <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <main class="npMain">
-        <nav>
-            <div class="logo"><h1>OutDoor</h1></div>
-            <div class="openMenu"><i class="fa fa-bars"></i></div>
-            <ul class="mainMenu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Place to go</a></li>
-                <li><a href="#">Things to do</a></li>
-                <li><a href="#">Contact</a></li>
-                <div class="closeMenu"><i class="fa fa-times"></i></div>
-                <span class="icons">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-github"></i>
-                </span>
-            </ul>
-        </nav>
-        <section class="pSection-1">
-            <h1 style="margin-left: 25px; font-size: 100px">National Parks</h1>
+      <nav>
+        <div class="logo"><h1>OutDoor</h1></div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Place to go</a></li>
+          <li><a href="#">Things to do</a></li>
+          <li><a href="#">Contact</a></li>
+          <div class="closeMenu"><i class="fa fa-times"></i></div>
+          <span class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github"></i>
+          </span>
+        </ul>
+      </nav>
+      <section class="pSection-1">
+        <h1 style="margin-left: 25px; font-size: 100px">National Parks</h1>
 
-            <fieldset style="margin: 20px;">
-                <legend>
-                     Search Park 
-                </legend>
-                <div>
-                    <button id="parkType">Search By Type</button>
-                    <select name="sParkType" id="sParkType">
-                        <option id="" value="">Choose Park Type</option>
-                    </select>
-                </div>
-                <div>
-                    <button id="parkLocation">Search By Location</button>
-                    <select name="sLocation" id="sLocation">
-                        <option value="">Choose Location</option>
-                    </select>
-                </div>
-                <div>
-                    <button id="showAll">View All National Park</button>
-                </div>
-                
-            </fieldset >
-            <fieldset style="margin: 20px;">
-                <legend>Output</legend>
-                <div id="tContainer">
-                    <table class="table">
-                        <thead class="thead-dark">
-                          <tr>
-                            <th>LocationID</th>
-                            <th>LocationName</th>
-                            <th>Address</th>
-                            <th>City</th>
-                            <th>State</th>
-                            <th>ZipCode</th>
-                            <th>Phone</th>
-                            <th>Fax</th>
-                            <th>Latitude</th>
-                            <th>Longitude</th>
-                            <th>Location <br>
-                            cordinate/Type</th>
-                            <th>Visit</th>
-                          </tr>
-                        </thead>
-                        <tbody id="tBody">
-                        </tbody>
-                        <!-- <tbody>
-                          <tr>
-                            <td id="tdLocationID">LocationID</td>
-                            <td id="tdLocationName">LocationName</td>
-                            <td id="tdAddress">Address</td>
-                            <td id="tdCity">City</td>
-                            <td id="tdZipCode">ZipCode</td>
-                            <td id="tdPhone">Phone</td>
-                            <td id="tdFax">Fax</td>
-                            <td id="tdLatitude">CitLatitudey</td>
-                            <td id="tdLongitude">Longitude</td>
-                            <td id="tdLocation">Location</td>
-                          </tr>
-                          <tr>
-                            <td id="tdLocationID">LocationID</td>
-                            <td id="tdLocationName">LocationName</td>
-                            <td id="tdAddress">Address</td>
-                            <td id="tdCity">City</td>
-                            <td id="tdZipCode">ZipCode</td>
-                            <td id="tdPhone">Phone</td>
-                            <td id="tdFax">Fax</td>
-                            <td id="tdLatitude">CitLatitudey</td>
-                            <td id="tdLongitude">Longitude</td>
-                            <td id="tdLocation">Location</td>
-                          </tr>
-                          <tr>
-                            <td id="tdLocationID">LocationID</td>
-                            <td id="tdLocationName">LocationName</td>
-                            <td id="tdAddress">Address</td>
-                            <td id="tdCity">City</td>
-                            <td id="tdZipCode">ZipCode</td>
-                            <td id="tdPhone">Phone</td>
-                            <td id="tdFax">Fax</td>
-                            <td id="tdLatitude">CitLatitudey</td>
-                            <td id="tdLongitude">Longitude</td>
-                            <td id="tdLocation">Location</td>
-                          </tr>
-                        </tbody> -->
-                    </table>
-                      
-                      
-                </div>
-
-            </fieldset>
-            <div>
-                
-            </div>
-        </section>
+        <fieldset style="margin: 20px">
+          <legend>Search Park</legend>
+          <div>
+            <button id="parkType">Search By Type</button>
+            <select name="sParkType" id="sParkType">
+              <option id="" value="">Choose Park Type</option>
+            </select>
+          </div>
+          <div>
+            <button id="parkLocation">Search By Location</button>
+            <select name="sLocation" id="sLocation">
+              <option value="">Choose Location</option>
+            </select>
+          </div>
+          <div>
+            <button id="showAll">View All National Park</button>
+          </div>
+        </fieldset>
+        <fieldset style="margin: 20px">
+          <legend>Output</legend>
+          <div id="tContainer">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th>LocationID</th>
+                  <th>LocationName</th>
+                  <th>Address</th>
+                  <th>City</th>
+                  <th>State</th>
+                  <th>ZipCode</th>
+                  <th>Phone</th>
+                  <th>Fax</th>
+                  <th>Latitude</th>
+                  <th>Longitude</th>
+                  <th>
+                    Location <br />
+                    cordinate/Type
+                  </th>
+                  <th>Visit</th>
+                </tr>
+              </thead>
+              <tbody id="tBody"></tbody>
+            </table>
+          </div>
+        </fieldset>
+        <div></div>
+      </section>
     </main>
-    <!-- <tbody>
-        <tr>
-          <td id="td1">LocationID td1</td>
-          <td id="td2">LocationName td2</td>
-          <td id="td3">Address td3</td>
-          <td id="td4">City td4</td>
-          <td id="td5">State td5</td>
-          <td id="td6">ZipCode td6</td>
-          <td id="td7">Phone td7</td>
-          
-        </tr>
-      </tbody> -->
-       <!-- <table id="npTable">
-                        <thead id="npThead">
-                          <tr id="trow">
-                            <th>LocationID</th>
-                            <th>LocationName</th>
-                            <th>Address</th>
-                            <th>City</th>
-                            <th>State</th>
-                            <th>ZipCode</th>
-                            <th>Phone</th>
-                            <th>Fax</th>
-                            <th>Latitude</th>
-                            <th>Longitude</th>
-                            <th>Location</th>
-                          </tr>
-                        </thead>
-                      </table> -->
 
     <script src="../scripts/parksSearch.js " type="module"></script>
-    <script>
-        const showAllBtn = document.getElementById('showAll');
-
-        const parkTypeBtn = document.getElementById('parkType');
-        const sParkTypeBtn = document.getElementById('sParkType');
-
-        const parkLocationBtn = document.getElementById('parkLocation');
-        const sParkLocationBtn = document.getElementById('sLocation');
-
-        sParkTypeBtn.style.display = "none";
-        sParkLocationBtn.style.display = "none";
-
-        parkTypeBtn.onclick = function () {
-            if (sParkTypeBtn.style.display !== "none") {
-                sParkTypeBtn.style.display = "none";
-            }
-            else {
-                sParkTypeBtn.style.display = "inline";
-
-            }
-        }
-        parkLocationBtn.onclick = function () {
-            if (sParkLocationBtn.style.display !== "none") {
-                sParkLocationBtn.style.display = "none";
-            }
-            else {
-                sParkLocationBtn.style.display = "inline";
-
-            }
-        }
-
-
-
-
-    </script>
-    
-</body>
+  </body>
 </html>
