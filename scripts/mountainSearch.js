@@ -3,6 +3,8 @@ import { mountainsArray } from "./mountainData.js";
 const sMountainEl = document.getElementById("sMountain");
 const outputDivEl = document.getElementById("outputDiv");
 const outputimgDivEl = document.getElementById("outputImgDiv");
+const outputFieldset = document.getElementById("outputFieldset");
+
 
 
 for (let i = 0; i < mountainsArray.length; i++) {
@@ -11,8 +13,8 @@ for (let i = 0; i < mountainsArray.length; i++) {
   sMountainEl.appendChild(theOption);
 }
 
+outputFieldset.onclick
 sMountainEl.onchange = displayItems;
-// sMountainEl.onchange = document.location.reload();
 
 function displayItems() {
 
