@@ -9,9 +9,6 @@ const firstFieldSet = document.getElementById("firstFieldSet");
 
 outputFieldset.style.visibility = 'hidden';
 
-// sParkLocationBtn.selectedIndex = 0;
-// sParkTypeBtn.selectedIndex = 0;
-
 for (let i = 0; i < mountainsArray.length; i++) {
   const element = mountainsArray[i].name;
   let theOption = new Option(element);
@@ -24,21 +21,14 @@ firstFieldSet.onclick = function (){
   sMountainEl.selectedIndex = 0;
 
 }
-
-
 sMountainEl.onchange = displayItems;
 
 function displayItems() {
-  
   outputFieldset.style.visibility = 'visible';
-
   let sMountainElValue = sMountainEl.value;
   outputDivEl.innerHTML = '';
   outputimgDivEl.innerHTML = '';
-
-
   mountainsArray.forEach((av) => {
-
 
     if (sMountainElValue == av.name) {
       
@@ -47,8 +37,6 @@ function displayItems() {
       let imgSrc = av.img;
       imgEl.src = `../images/${imgSrc}`;
       imgEl.classList.add("myImg");
-
-     
 
       let divName = document.createElement('div');
       divName.classList.add("myDiv");
