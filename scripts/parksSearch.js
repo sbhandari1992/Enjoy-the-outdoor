@@ -63,6 +63,10 @@ showAllBtn.onclick = getAllData;
 
 function getAllData() {
     //to clear a selected option
+    sParkLocationBtn.selectedIndex = 0;
+    sParkTypeBtn.selectedIndex = 0;
+
+
 
     feildSet.style.display = "block";
     sParkTypeBtn.style.display = "none";
@@ -76,8 +80,7 @@ sParkLocationBtn.onchange = getParksByLocation;
 
 function getParksByLocation() {
     //to clear a selected option
-    sParkLocationBtn.selectedIndex = 0;
-
+    sParkTypeBtn.selectedIndex = 0;
     feildSet.style.display = "block";
   tBodyEl.innerHTML = "";
   let selectedParkLoc = nationalParksArray.filter(
@@ -90,9 +93,9 @@ function getParksByLocation() {
 sParkTypeBtn.onchange = getParksByType;
 
 function getParksByType() {
-    //to clear a selected option
-    sParkTypeBtn.selectedIndex = 0;
-    
+    //to clear a selected option 
+    sParkLocationBtn.selectedIndex = 0;
+   
     feildSet.style.display = "block";
   tBodyEl.innerHTML = "";
   let selectedParkType = nationalParksArray.filter((array) =>
