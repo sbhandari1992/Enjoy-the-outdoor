@@ -9,7 +9,8 @@ const firstFieldSet = document.getElementById("firstFieldSet");
 
 outputFieldset.style.visibility = 'hidden';
 
-
+// sParkLocationBtn.selectedIndex = 0;
+// sParkTypeBtn.selectedIndex = 0;
 
 for (let i = 0; i < mountainsArray.length; i++) {
   const element = mountainsArray[i].name;
@@ -20,6 +21,8 @@ for (let i = 0; i < mountainsArray.length; i++) {
 firstFieldSet.onclick = function (){
   console.log('yes it clicked');
   outputFieldset.style.visibility = 'hidden';
+  sMountainEl.selectedIndex = 0;
+
 }
 
 
