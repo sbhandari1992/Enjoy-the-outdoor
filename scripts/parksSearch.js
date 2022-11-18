@@ -23,6 +23,7 @@ feildSet.style.display = "none";
 
 firstDivinFeildset.onclick = function (){
     feildSet.style.display = "none";
+    // sParkLocationBtn.display = "none"
     // sParkLocationBtn.style.visibility = 'hidden';
 }
 //handel parksTypeBtn
