@@ -4,6 +4,10 @@ const sMountainEl = document.getElementById("sMountain");
 const outputDivEl = document.getElementById("outputDiv");
 const outputimgDivEl = document.getElementById("outputImgDiv");
 const outputFieldset = document.getElementById("outputFieldset");
+const firstFieldSet = document.getElementById("firstFieldSet");
+
+
+outputFieldset.style.visibility = 'hidden';
 
 
 
@@ -13,10 +17,17 @@ for (let i = 0; i < mountainsArray.length; i++) {
   sMountainEl.appendChild(theOption);
 }
 
+firstFieldSet.onclick = function (){
+  console.log('yes it clicked');
+  outputFieldset.style.visibility = 'hidden';
+}
+
 
 sMountainEl.onchange = displayItems;
 
 function displayItems() {
+  
+  outputFieldset.style.visibility = 'visible';
 
   let sMountainElValue = sMountainEl.value;
   outputDivEl.innerHTML = '';
@@ -31,21 +42,35 @@ function displayItems() {
       let imgEl = document.createElement("img");
       outputimgDivEl.appendChild(imgEl);
       let imgSrc = av.img;
-      console.log(imgSrc);
-      imgEl.src = `../images/${imgSrc}`
+      imgEl.src = `../images/${imgSrc}`;
+      imgEl.classList.add("myImg");
+
      
 
-      let h4Name = document.createElement("h4");
-      outputDivEl.appendChild(h4Name);
-      h4Name.innerText = `Mountain Name:   ${av.name}`;
+      let divName = document.createElement('div');
+      divName.classList.add("myDiv");
+      divName.style = "font-size: xx-large"
+      outputDivEl.appendChild(divName);
+      divName.innerText = av.name;
 
-      let h4Desc = document.createElement("h4");
-      outputDivEl.appendChild(h4Desc);
-      h4Desc.innerText = `Mountain Discription:  ${av.desc}`;
+      let divElevation = document.createElement("div");
+      divElevation.classList.add("myDiv");
+      divElevation.style = "font-size: x-large"
+      outputDivEl.appendChild(divElevation);
+      divElevation.innerText = `Elevation: ${av.elevation} ft`;
 
-      let h4Elevation = document.createElement("h4");
-      outputDivEl.appendChild(h4Elevation);
-      h4Elevation.innerText = `Mountain  Elevation:  ${av.elevation}`;
+      let divLat = document.createElement("div");
+      divLat.style = "font-size: larger"
+      divLat.classList.add("myDiv")
+      outputDivEl.appendChild(divLat);
+      divLat.innerText = `Lat - ${av.coords.lat} / Lan - ${av.coords.lng}`;
+
+      let divDes = document.createElement("div");
+      divDes.style = "font-size: large"
+      divDes.classList.add("myDiv")
+      outputDivEl.appendChild(divDes);
+      divDes.innerText = av.desc;
+
     } else {
       return;
     }

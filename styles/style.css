@@ -48,7 +48,7 @@
   .child:nth-child(2) {background-color: rgb(0, 81, 255);} */
 
   
-  .sectional-link , #parkType , #showAll, #parkLocation, #sLocation, #sParkType{
+  .sectional-link , #parkType , #showAll, #parkLocation, #sLocation, #sParkType ,#sMountain{
     border: 3px solid red;
     background-color: green;
     width: 200px;
@@ -64,7 +64,7 @@
 	  transition: 0.9s ease 0;
 
   }
-  .sectional-link:hover, #parkType:hover , #showAll:hover, #parkLocation:hover, #sLocation:hover, #sParkType:hover {
+  .sectional-link:hover, #parkType:hover , #showAll:hover, #parkLocation:hover, #sLocation:hover, #sParkType:hover ,#sMountain:hover{
     background: rgb(129, 47, 47);
     color: rgb(255, 255, 255);
 	  border-radius: 50%;
@@ -76,6 +76,71 @@
     font-family: Arial, sans-serif;
 	  background-color: rgb(168, 137, 139);
   }
+  #outputFieldset {
+    display: flex;
+	  background-color: rgb(168, 137, 139);
+    justify-content: center;
+  }
+  .outputDiv {
+    flex: 1;
+	  /* background-color: rgb(168, 137, 139); */
+    /* flex-basis: 50%; */
+    /* background-color: blue;
+    border-radius: 50px;
+    align-items:center;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around; */
+  }
+  #outputDiv {
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 20px 10px rgb(114, 2, 2);
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+
+
+
+  }
+  .myDiv {
+    margin: 30px;
+    font-style: italic;
+  }
+  .outputImgDiv {
+    flex: 1;
+    /* flex-basis: 50%; */
+	  /* background-color: rgb(168, 137, 139); */
+    border-radius: 50px;
+    align-items: center;
+    margin: 10px;
+    display: flex;
+  }
+  #outputImgDiv {
+    margin: 50px;
+  }
+
+  .myImg {
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 10px rgb(223, 221, 209);
+
+  }
+
+
+  
+ 
+
+
+
+
+
+
+
+
+
   nav {
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
