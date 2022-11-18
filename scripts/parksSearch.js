@@ -47,14 +47,14 @@ parkLocationBtn.onclick = function () {
 };
 
 ///to put option for  choose  by location dropdown
-locationsArray.forEach(function (av) {
-  let optionElement = new Option(av);
+locationsArray.forEach(function (array) {
+  let optionElement = new Option(array);
   sLocation.appendChild(optionElement);
 });
 
 ///to put option for  choose  by park type dropdown
-parkTypesArray.forEach(function (av) {
-  let optionElement = new Option(av);
+parkTypesArray.forEach(function (array) {
+  let optionElement = new Option(array);
   sParkTypeBtn.appendChild(optionElement);
 });
 
@@ -76,7 +76,7 @@ function getParksByLocation() {
     feildSet.style.display = "block";
   tBodyEl.innerHTML = "";
   let selectedParkLoc = nationalParksArray.filter(
-    (av) => sParkLocationBtn.value == av.State
+    (arr) => sParkLocationBtn.value == arr.State
   );
   console.log(selectedParkLoc);
   return selectedParkLoc.forEach((array) => getTableRowsAndColumns(array));
