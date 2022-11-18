@@ -197,6 +197,8 @@ th {
   color: rgb(150, 26, 26);
   font-size: 15px;
   background: #eee;
+  position: sticky;
+  top: 50px;
 
 
 }
