@@ -13,10 +13,6 @@ const sParkLocationBtn = document.getElementById("sLocation");
 const feildSet = document.getElementById("feildSet");
 const feildSetSearch = document.getElementById("feildSetSearch");
 const firstDivinFeildset = document.getElementById("firstDivinFeildset");
-
-
-
-
 const tBodyEl = document.getElementById("tBody");
 
 ///this is just hide and show button as user click
@@ -27,6 +23,7 @@ feildSet.style.display = "none";
 
 firstDivinFeildset.onclick = function (){
     feildSet.style.display = "none";
+    // sParkLocationBtn.style.visibility = 'hidden';
 }
 //handel parksTypeBtn
 parkTypeBtn.onclick = function () {
@@ -39,6 +36,8 @@ parkTypeBtn.onclick = function () {
 };
 //handel parklocationBtn
 parkLocationBtn.onclick = function () {
+    
+    // sParkLocationBtn.style.visibility = 'visible';
   sParkTypeBtn.style.display = "none";
   if (sParkLocationBtn.style.display !== "none") {
     sParkLocationBtn.style.display = "none";

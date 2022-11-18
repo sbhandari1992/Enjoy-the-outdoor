@@ -13,9 +13,18 @@
     height: 500px;
 
   } */
+  #feildSetSearch {
+    background-image: url("../images/100-aniversary.jpeg");
+
+  }
   legend {
     font-size: 50px;
     margin: 20px;
+    box-shadow: 1px 1px 10px 10px rgb(245, 244, 249);
+    border: 5px solid red;
+    color: whitesmoke;
+    font-style: italic;
+
   }
 
  .pSection1 {
@@ -71,11 +80,13 @@
     transition: 0.5s ease;
     cursor: pointer; 
   }
+  
 
   body {
     font-family: Arial, sans-serif;
 	  background-color: rgb(168, 137, 139);
   }
+
   nav {
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -164,4 +175,124 @@
       display: inline-block;
       padding: 12px;
     }
+}
+
+
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  box-shadow: 15px 15px #dfe0a80d;
+  border-collapse: collapse;
+  align-items: stretch;
+
+}
+th {
+  background-color: #5bb56c;
+  color: rgb(150, 26, 26);
+  font-size: 15px;
+  background: #eee;
+
+}
+
+td,th {
+  padding: 12px;
+  border: 1px solid #ccc;
+
+  font-size: 10px;
+
+}
+@media only screen and (max-width: 1093px){
+
+  td,tr {
+    display: block;
+  }
+  thead tr {
+    display: none;
+  }
+  tr {
+    border: 1px solid rgb(204, 204, 204);
+    margin-bottom: 15px;
+    
+  }
+  td::before {
+    font-size: 15px;
+    text-align: left;
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    
+  }
+  td {
+    border: 1px solid rgb(0, 255, 123);
+    border-bottom: 1px solid rgb(19, 214, 71);
+    font-size: 12px;
+    position: sticky;
+    text-align: right;
+    display: block;
+  }
+  tr:nth-of-type(odd) {
+  background-color: #1b77cd;
+  color: white;
+  font-style: italic;
+  }
+
+  tr:nth-of-type(even) {
+    background-color: rgb(232, 214, 214);
+    font-style: italic;
+
+  }
+
+  
+  td:nth-of-type(1)::before {
+    content: "Location ID";
+  }
+  td:nth-of-type(2)::before {
+    content: "Location Name";
+  }
+
+  td:nth-of-type(3)::before {
+    content: "Address";
+  }
+
+  td:nth-of-type(4)::before {
+    content: "City";
+  }
+
+  td:nth-of-type(5)::before {
+    content: "State";
+  }
+
+  td:nth-of-type(6)::before {
+    content: "ZipCode";
+  }
+
+  td:nth-of-type(7)::before {
+    content: "Phone number";
+  }
+
+  td:nth-of-type(8)::before {
+    content: "Fax";
+  }
+
+  td:nth-of-type(9)::before {
+    content: "Latitude";
+  }
+
+  td:nth-of-type(10)::before {
+    content: "Longitude";
+  }
+
+  td:nth-of-type(11)::before {
+    content: "Location cordinate / Type";
+  }
+  td:nth-of-type(12)::before {
+    content: "Visit";
+  }
+  
 }
