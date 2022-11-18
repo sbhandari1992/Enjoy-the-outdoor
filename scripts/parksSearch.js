@@ -62,6 +62,8 @@ parkTypesArray.forEach(function (array) {
 showAllBtn.onclick = getAllData;
 
 function getAllData() {
+    //to clear a selected option
+
     feildSet.style.display = "block";
     sParkTypeBtn.style.display = "none";
   sParkLocationBtn.style.display = "none";
@@ -73,12 +75,14 @@ function getAllData() {
 sParkLocationBtn.onchange = getParksByLocation;
 
 function getParksByLocation() {
+    //to clear a selected option
+    sParkLocationBtn.selectedIndex = 0;
+
     feildSet.style.display = "block";
   tBodyEl.innerHTML = "";
   let selectedParkLoc = nationalParksArray.filter(
     (arr) => sParkLocationBtn.value == arr.State
   );
-  console.log(selectedParkLoc);
   return selectedParkLoc.forEach((array) => getTableRowsAndColumns(array));
 }
 
@@ -86,6 +90,9 @@ function getParksByLocation() {
 sParkTypeBtn.onchange = getParksByType;
 
 function getParksByType() {
+    //to clear a selected option
+    sParkTypeBtn.selectedIndex = 0;
+    
     feildSet.style.display = "block";
   tBodyEl.innerHTML = "";
   let selectedParkType = nationalParksArray.filter((array) =>
