@@ -5,17 +5,24 @@ const outputDivEl = document.getElementById("outputDiv");
 const outputimgDivEl = document.getElementById("outputImgDiv");
 const outputFieldset = document.getElementById("outputFieldset");
 const firstFieldSet = document.getElementById("firstFieldSet");
+const myNav = document.getElementById("myNav");
+
 
 
 outputFieldset.style.visibility = 'hidden';
 
-for (let i = 0; i < mountainsArray.length; i++) {
-  const element = mountainsArray[i].name;
-  let theOption = new Option(element);
+mountainsArray.forEach(myOPt => {
+  let theOption = new Option(myOPt.name);
   sMountainEl.appendChild(theOption);
-}
+});
 
-firstFieldSet.onclick = function (){
+// firstFieldSet.onclick = function (){
+//   console.log('yes it clicked');
+//   outputFieldset.style.visibility = 'hidden';
+//   sMountainEl.selectedIndex = 0;
+
+// }
+myNav.onclick = function (){
   console.log('yes it clicked');
   outputFieldset.style.visibility = 'hidden';
   sMountainEl.selectedIndex = 0;
