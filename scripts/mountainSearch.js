@@ -16,14 +16,14 @@ mountainsArray.forEach(myOPt => {
   sMountainEl.appendChild(theOption);
 });
 
-// firstFieldSet.onclick = function (){
-//   console.log('yes it clicked');
-//   outputFieldset.style.visibility = 'hidden';
-//   sMountainEl.selectedIndex = 0;
+//clear result when user click on fieldset section
+firstFieldSet.onclick = function (){
+  outputFieldset.style.visibility = 'hidden';
+  sMountainEl.selectedIndex = 0;
 
-// }
+}
+//clear result when user click on nav section
 myNav.onclick = function (){
-  console.log('yes it clicked');
   outputFieldset.style.visibility = 'hidden';
   sMountainEl.selectedIndex = 0;
 
@@ -70,7 +70,7 @@ function displayItems() {
       divDes.innerText = av.desc;
 
     } else {
-      return;
+      sMountainEl.selectedIndex = 0;
     }
 
   });
