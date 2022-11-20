@@ -118,7 +118,7 @@
   .outputImgDiv {
     flex: 1;
     /* flex-basis: 50%; */
-	  /* background-color: rgb(168, 137, 139); */
+	  /* background-color: rgb(166, 130, 222); */
     border-radius: 50px;
     align-items: center;
     margin: 10px;
@@ -126,12 +126,22 @@
   }
   #outputImgDiv {
     margin: 50px;
+    /* background-color: aqua; */
   }
 
   .myImg {
     border-radius: 20px;
     box-shadow: 1px 1px 20px 10px rgb(223, 221, 209);
 
+  }
+  .mySr, .mySs {
+    margin: 20px;
+    font-size: large;
+    font-style: italic;
+    color: rgb(17, 1, 11);
+
+    
+    
   }
 
   nav {
