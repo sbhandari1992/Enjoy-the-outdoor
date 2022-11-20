@@ -14,6 +14,8 @@ const feildSet = document.getElementById("feildSet");
 const feildSetSearch = document.getElementById("feildSetSearch");
 const firstDivinFeildset = document.getElementById("firstDivinFeildset");
 const tBodyEl = document.getElementById("tBody");
+const myNav = document.getElementById("myNav");
+
 
 ///this is just hide and show button as user click
 sParkTypeBtn.style.display = "none";
@@ -23,8 +25,13 @@ feildSet.style.display = "none";
 
 firstDivinFeildset.onclick = function (){
     feildSet.style.display = "none";
-    // sParkLocationBtn.display = "none"
-    // sParkLocationBtn.style.visibility = 'hidden';
+}
+myNav.onclick = function (){
+  feildSet.style.display = "none";
+  sParkLocationBtn.style.display = "none";
+  sParkTypeBtn.style.display = "none"
+
+  // sParkLocationBtn.style.visibility = 'hidden';
 }
 //handel parksTypeBtn
 parkTypeBtn.onclick = function () {
@@ -100,7 +107,7 @@ function getParksByType() {
     feildSet.style.display = "block";
   tBodyEl.innerHTML = "";
   let selectedParkType = nationalParksArray.filter((array) =>
-    array.LocationName.includes(sParkTypeBtn.value)
+    array.LocationName.toUpperCase().includes(sParkTypeBtn.value.toUpperCase())
   );
   return selectedParkType.forEach((array) => getTableRowsAndColumns(array));
 }
