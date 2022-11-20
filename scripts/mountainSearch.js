@@ -39,7 +39,6 @@ function displayItems() {
 
     if (sMountainElValue == av.name ) {
       let sr = document.createElement('div');
-      console.log(sr);
       outputimgDivEl.appendChild(sr);
       sr.classList.add("mySr");
 
@@ -51,7 +50,6 @@ function displayItems() {
 
 
       let ss = document.createElement('div');
-      console.log(ss);
       outputimgDivEl.appendChild(ss);
       ss.classList.add("mySs");
 
@@ -93,26 +91,33 @@ function displayItems() {
 
 }
 
-let lat = [];
-// console.log(lat)
-for (let i = 0; i < mountainsArray.length; i++) {
-  lat.push(mountainsArray[i].coords.lat);
-
-  
-}
-let lng = [];
-// console.log(lng)
-for (let i = 0; i < mountainsArray.length; i++) {
-  lng.push(mountainsArray[i].coords.lng);
-
-  
-}
-
 async function getSunsetForMountain(lat, lng){
   let response = await fetch( `https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&date=today`);
      let data = await response.json();
      return data;
 }
+
+
+getSunsetForMountain(av.coords.lat, av.coords.lng).then(data => {
+        console.log(data.results)
+        sr.innerText = `Sunrise ${data.results.sunrise} UTC`;
+        ss.innerText = `Sunset ${data.results.sunset} UTC`;
+      });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
