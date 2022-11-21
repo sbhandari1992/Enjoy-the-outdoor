@@ -98,11 +98,11 @@ async function getSunsetForMountain(lat, lng){
 }
 
 
-getSunsetForMountain(av.coords.lat, av.coords.lng).then(data => {
-        console.log(data.results)
-        sr.innerText = `Sunrise ${data.results.sunrise} UTC`;
-        ss.innerText = `Sunset ${data.results.sunset} UTC`;
-      });
+// getSunsetForMountain(av.coords.lat, av.coords.lng).then(data => {
+//         console.log(data.results)
+//         sr.innerText = `Sunrise ${data.results.sunrise} UTC`;
+//         ss.innerText = `Sunset ${data.results.sunset} UTC`;
+//       });
 
 
 
