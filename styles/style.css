@@ -143,6 +143,9 @@
     
     
   }
+  #firstFieldSet>div {
+    padding-bottom: 15px;
+  }
 
   nav {
     background: rgb(0, 0, 0);
@@ -231,6 +234,9 @@
     .icons i {
       display: inline-block;
       padding: 12px;
+    }
+    #firstFieldSet>div {
+      padding-bottom: 15px;
     }
     #outputFieldset {
       display: flex;
