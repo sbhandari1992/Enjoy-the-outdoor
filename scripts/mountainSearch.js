@@ -141,13 +141,14 @@ async function getSunsetForMountain(lat, lng){
 
   // console.log(getSunsetForMountain());
 
-  ///question
-// let lati = mountainsArray.forEach(function (arr) {
-//   return arr.coords.lat
+//   ///question
+// let latitude = mountainsArray.forEach(function (arr) {
+//   console.log(arr.coords.lat);
+//   // return arr.coords.lat
 
 // });
-// console.log(lati);
-// console.log(lati);
+// console.log(latitude);
+
 
 // let lng = mountainsArray.forEach((av) => {
 //   return (av.coords.lng);
