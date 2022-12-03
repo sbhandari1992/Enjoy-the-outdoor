@@ -260,10 +260,6 @@ td,th {
     content: "Location Name";
   }
 
-  td:nth-of-type(3)::before {
-    content: "Address";
-  }
-
   td:nth-of-type(4)::before {
     content: "City";
   }
@@ -300,3 +296,7 @@ td,th {
   }
   
 }
+
+  td:nth-of-type(3)::before {
+    content: "Address";
+  }
