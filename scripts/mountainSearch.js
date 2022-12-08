@@ -64,6 +64,7 @@ function displayItems() {
       divElevation.style = "font-size: x-large"
       outputDivEl.appendChild(divElevation);
       divElevation.innerText = `Elevation: ${av.elevation} ft`;
+      console.log(outputDivEl);
 
       let divLat = document.createElement("div");
       divLat.style = "font-size: larger"
